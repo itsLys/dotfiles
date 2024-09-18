@@ -1,0 +1,6 @@
+plugins/*
+!plugins/tokyo-night-tmux
+plugins/tokyo-night-tmux/*
+!plugins/tokyo-night-tmux/src
+plugins/tokyo-night-tmux/src/*
+!plugins/tokyo-night-tmux/src/themes.sh
