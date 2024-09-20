@@ -1,51 +1,52 @@
+local opt = vim.opt
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
 vim.g.have_nerd_font = true
 
-vim.opt.number = true
-vim.opt.relativenumber = true
+opt.number = true
+opt.relativenumber = true
 
-vim.opt.mouse = "a"
+opt.mouse = "a"
 
-vim.opt.showmode = false
+opt.showmode = false
 
-vim.opt.breakindent = true
+opt.breakindent = true
 
-vim.opt.undofile = true
+opt.undofile = true
 
-vim.opt.ignorecase = true
-vim.opt.smartcase = true
+opt.ignorecase = true
+opt.smartcase = true
 
-vim.opt.signcolumn = "yes"
+opt.signcolumn = "yes"
 
-vim.opt.updatetime = 250
+opt.updatetime = 250
 
-vim.opt.timeoutlen = 300
+opt.timeoutlen = 300
 
-vim.opt.splitright = true
-vim.opt.splitbelow = true
+opt.splitright = true
+opt.splitbelow = true
 
-vim.opt.list = true
-vim.opt.listchars = { tab = "  ", trail = "·", nbsp = " " }
-vim.opt.shiftwidth = 4
-vim.opt.tabstop = 4
+opt.list = true
+opt.listchars = { tab = "  ", trail = "·", nbsp = " " }
+opt.shiftwidth = 4
+opt.tabstop = 4
 
-vim.opt.inccommand = "split"
+opt.inccommand = "split"
 
-vim.opt.cursorline = true
-vim.opt.termguicolors = true
+opt.cursorline = true
+opt.termguicolors = true
 
-vim.opt.scrolloff = 10
+opt.scrolloff = 10
 
-vim.opt.swapfile = false
-vim.opt.backup = false
+opt.swapfile = false
+opt.backup = false
 
-vim.opt.wrap = false
-vim.opt.sidescroll = 10
+opt.wrap = false
+opt.sidescroll = 10
 
-vim.opt.list = true
-vim.opt.autowrite = true
+opt.list = true
+opt.autowrite = true
 
-vim.opt.guicursor =
-	"n-v-c:block-ErrorMsg/ErrorMsg,i-ci-ve:ver25,r-cr:hor20,o:hor50,i:blinkwait700-blinkoff400-blinkon250,sm:block-blinkwait175-blinkoff150-blinkon175"
+opt.guicursor =
+	"n-v-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor50,i:blinkwait700-blinkoff400-blinkon250,sm:block-blinkwait175-blinkoff150-blinkon175"

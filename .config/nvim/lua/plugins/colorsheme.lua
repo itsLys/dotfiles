@@ -9,7 +9,7 @@ return {
 						base = "#00060A",
 						surface = "#000B12",
 						overlay = "#000F1A",
-						gold = "#e0def4",
+						gold = "#EB6F92",
 					},
 				},
 			})

@@ -15,8 +15,10 @@ plugins=(
 	zsh-autosuggestions
 )
 source $ZSH/oh-my-zsh.sh
-# alias zshconfig="vim ~/.zshrc"
 # alias ohmyzsh="vim ~/.oh-my-zsh"
+export ZSHCONF="$HOME/.zshrc"
+export NVCONF="$HOME/.config/nvim"
+export TMUXCONF="$HOME/.config/tmux"
 alias vim="nvim"
 
 # Created by `pipx` on 2024-09-17 15:16:39
