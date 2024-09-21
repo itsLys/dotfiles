@@ -3,7 +3,8 @@ local set = vim.keymap.set
 set("v", "J", ":m '>+1<CR>gv=gv", { desc = "Move selection down" })
 set("v", "K", ":m '<-2<CR>gv=gv", { desc = "Move selection up" })
 -- Indent File
-set("n", "<leader>=", ":%s/s\\+$//<CR>gg=G''")
+-- set("n", "<leader>=", ":%s/s\\+$//e<CR>gg=G''")
+set("n", "<leader>=", ":%s/\\s\\+$//e<CR>gg=G``")
 -- Copying to clipboard
 set("n", "<leader>y", '"+y')
 set("v", "<leader>y", '"+y')

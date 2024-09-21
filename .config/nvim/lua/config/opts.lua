@@ -29,4 +29,8 @@ opt.wrap = false
 opt.sidescroll = 10
 opt.list = true
 opt.autowrite = true
-opt.guicursor = "n-v-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor50,i:blinkwait700-blinkoff400-blinkon250,sm:block-blinkwait175-blinkoff150-blinkon175"
+opt.showmatch = true
+opt.guicursor =
+	"n-v-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor50,i:blinkwait700-blinkoff400-blinkon250,sm:block-blinkwait175-blinkoff150-blinkon175"
+-- TODO: see :help colorcolumn
+opt.colorcolumn = "72"

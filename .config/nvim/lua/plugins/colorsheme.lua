@@ -8,7 +8,7 @@ return {
 					main = {
 						base = "#00060A",
 						surface = "#000B12",
-						overlay = "#000F1A",
+						overlay = "#001524",
 						gold = "#EB6F92",
 					},
 				},
