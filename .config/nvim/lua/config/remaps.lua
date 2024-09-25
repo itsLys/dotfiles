@@ -1,10 +1,12 @@
 local set = vim.keymap.set
+
 -- Moving selection
 set("v", "J", ":m '>+1<CR>gv=gv", { desc = "Move selection down" })
 set("v", "K", ":m '<-2<CR>gv=gv", { desc = "Move selection up" })
+
 -- Indent File
--- set("n", "<leader>=", ":%s/s\\+$//e<CR>gg=G''")
-set("n", "<leader>=", ":%s/\\s\\+$//e<CR>gg=G``")
+set("n", "<leader>=", "msHmt:%s/\\s\\+$//e<CR>gg=G'tzt`s", { desc = "Remove trailing blanks and indent file" })
+
 -- Copying to clipboard
 set("n", "<leader>y", '"+y')
 set("v", "<leader>y", '"+y')
@@ -21,6 +23,7 @@ set("v", "<leader>p", '"+p')
 set("n", "<leader>P", '"+P')
 
 -- Clear highlights on search
+
 -- `:help hlsearch`
 set("n", "<Esc>", "<cmd>nohlsearch<CR>")
 
@@ -46,3 +49,17 @@ set("n", "<M-l>", "<C-w>5>", { desc = "Move focus to the upper window" })
 set("n", "<M-h>", "<C-w>5<", { desc = "Move focus to the upper window" })
 set("n", "<M-+>", "<C-w>+", { desc = "Move focus to the upper window" })
 set("n", "<M-->", "<C-w>-", { desc = "Move focus to the upper window" })
+
+-- Smooth scrolling
+set(
+	"n",
+	"<C-D>",
+	"<C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E>",
+	{ desc = "Move focus to the upper window" }
+)
+set(
+	"n",
+	"<C-U>",
+	"<C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y>",
+	{ desc = "Move focus to the upper window" }
+)
