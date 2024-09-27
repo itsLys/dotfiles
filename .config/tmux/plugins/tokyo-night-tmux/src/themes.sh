@@ -53,26 +53,26 @@ case $SELECTED_THEME in
 
 *)
   # Default to night theme
-  declare -A THEME=(
+declare -A THEME=(
     ["background"]="#000B12"
     ["foreground"]="#ebbcba"
-    ["black"]="#ffffff"
+    ["black"]="#001524"
     ["blue"]="#ebbcba"
-    ["cyan"]="#9ccfd8"
-    ["green"]="#73daca"
+    ["cyan"]="#31748f"
+    ["green"]="#9ccfd8"
     ["magenta"]="#bb9af7"
     ["red"]="#f7768e"
-    ["white"]="#c0caf5"
+    ["white"]="#001524"
     ["yellow"]="#e0af68"
 
-    ["bblack"]="#000F1A"
-    ["bblue"]="#ffffff"
-    ["bcyan"]="#000B12"
-    ["bgreen"]="#000B12"
-    ["bmagenta"]="#ffffff"
-    ["bred"]="#000B12"
-    ["bwhite"]="#000B12"
-    ["byellow"]="#000B12"
+    ["bblack"]="#001524"
+    ["bblue"]="#31748f"
+    ["bcyan"]="#9ccfd8"
+    ["bgreen"]="#9ccfd8"
+    ["bmagenta"]="#bb9af7"
+    ["bred"]="#ff9e64"
+    ["bwhite"]="#787c99"
+    ["byellow"]="#e0af68"
   )
   ;;
 esac
