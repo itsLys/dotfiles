@@ -6,7 +6,7 @@ ZSH_THEME="lukerandall"
 # CASE_SENSITIVE="true"
 # HYPHEN_INSENSITIVE="true"
 zstyle ':omz:update' mode disabled  # disable automatic updates
-ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="false"
 COMPLETION_WAITING_DOTS="true"
 # DISABLE_UNTRACKED_FILES_DIRTY="true"
 # HIST_STAMPS="mm/dd/yyyy"
