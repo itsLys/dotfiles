@@ -21,6 +21,7 @@ set("n", "<leader>D", '"+D')
 set("n", "<leader>p", '"+p')
 set("v", "<leader>p", '"+p')
 set("n", "<leader>P", '"+P')
+set("v", "p", '"_dP')
 
 -- Clear highlights on search
 
