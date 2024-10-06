@@ -12,6 +12,9 @@ return {
 						gold = "#EB6F92",
 					},
 				},
+				highlight_groups = {
+					Visual = { bg = "#001524", fg = "#9ccfd8" },
+				},
 			})
 		end,
 		init = function()
