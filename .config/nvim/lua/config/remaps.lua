@@ -44,6 +44,9 @@ set("n", "<leader><C-h>", "<C-w><C-h>", { desc = "Move focus to the left window"
 set("n", "<leader><C-l>", "<C-w><C-l>", { desc = "Move focus to the right window" })
 set("n", "<leader><C-j>", "<C-w><C-j>", { desc = "Move focus to the lower window" })
 set("n", "<leader><C-k>", "<C-w><C-k>", { desc = "Move focus to the upper window" })
+set("n", "<leader>tn", ":tabnext<CR>", { desc = "[T]ab [N]ext" })
+set("n", "<leader>tp", ":tabprevious<CR>", { desc = "[T]ab [P]revious" })
+set("n", "<leader>tc", ":tabclose<CR>", { desc = "[T]ab [C]lose" })
 
 -- Resize splits
 set("n", "<M-l>", "<C-w>5>", { desc = "Move focus to the upper window" })
@@ -64,3 +67,5 @@ set(
 	"<C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y>",
 	{ desc = "Move focus to the upper window" }
 )
+
+set("n", "<leader>%", ":so<CR>", { desc = "Source Current File" })

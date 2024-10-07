@@ -29,7 +29,7 @@ require("lazy").setup({
 		},
 	},
 	{ "Bilal2453/luvit-meta", lazy = true },
-	{ import = "plugins" },
+	{ import = "custom/plugins" },
 })
 
 -- TODO: See :help sub-replace-special

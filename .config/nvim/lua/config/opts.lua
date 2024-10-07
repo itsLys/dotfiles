@@ -1,7 +1,9 @@
 local opt = vim.opt
+
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 vim.g.have_nerd_font = true
+
 opt.number = true
 opt.relativenumber = true
 opt.mouse = "a"
