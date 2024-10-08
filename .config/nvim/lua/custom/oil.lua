@@ -20,7 +20,19 @@ require("oil").setup({
 	view_options = {
 		show_hidden = true,
 	},
+	constrain_cursor = "editable",
+	watch_for_changes = true,
+	float = {
+		padding = 8,
+		max_width = 150,
+		max_height = 100,
+		border = "rounded",
+		win_options = {
+			winblend = 0,
+		},
+	},
 })
 -- Open Explorer
+--
 vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open Explorer" })
 vim.keymap.set("n", "<leader>--", require("oil").toggle_float)

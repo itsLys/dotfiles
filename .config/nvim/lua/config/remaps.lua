@@ -24,7 +24,6 @@ set("n", "<leader>P", '"+P')
 set("v", "p", '"_dP')
 
 -- Clear highlights on search
-
 -- `:help hlsearch`
 set("n", "<Esc>", "<cmd>nohlsearch<CR>")
 

@@ -8,7 +8,7 @@ require("rose-pine").setup({
 		},
 	},
 	highlight_groups = {
-		Visual = { bg = "#001524", fg = "gold" },
+		Visual = { bg = "#011627", fg = "gold" },
 		WhichKeyBorder = { fg = "pine" },
 		WhichKeyGroup = { fg = "pine" },
 		WhichKey = { fg = "pine" },

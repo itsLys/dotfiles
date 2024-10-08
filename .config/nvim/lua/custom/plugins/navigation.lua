@@ -60,13 +60,20 @@ return {
 				builtin.current_buffer_fuzzy_find(require("telescope.themes").get_dropdown({
 					winblend = 10,
 					previewer = false,
+					layout_config = {
+						width = 170,
+					},
 				}))
 			end, { desc = "[/] Search in current buffer" })
 
 			vim.keymap.set("n", "<leader>sk", function()
 				builtin.keymaps(require("telescope.themes").get_dropdown({
-					winblend = 10,
+					winblend = 20,
 					previewer = true,
+					layout_config = {
+						height = 30,
+						width = 160,
+					},
 				}))
 			end, { desc = "[S]earch [K]eymaps" })
 
