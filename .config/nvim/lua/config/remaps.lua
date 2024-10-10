@@ -68,3 +68,5 @@ set(
 )
 
 set("n", "<leader>%", ":so<CR>", { desc = "Source Current File" })
+
+set("n", "<leader>42", ":source ~/.config/nvim/lua/config/strheader.vim<CR>:Stdheader<CR>", { desc = "42 header" })

@@ -1,3 +1,4 @@
 Session*
-lazy-lock.json
+*json
+*.c
 

@@ -1,6 +1,7 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
+
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="lukerandall"
 # CASE_SENSITIVE="true"
@@ -24,3 +25,6 @@ alias vim="nvim"
 # Created by `pipx` on 2024-09-17 15:16:39
 export PATH="$PATH:/home/lys/.local/bin"
 alias config='/usr/bin/git --git-dir=/home/lys/dotfiles/ --work-tree=/home/lys'
+
+export MAIL="ihajji@student.1337.ma"
+export USER="ihajji"

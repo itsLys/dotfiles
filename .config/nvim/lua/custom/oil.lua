@@ -1,3 +1,12 @@
+function _G.get_oil_winbar()
+	local dir = require("oil").get_current_dir()
+	if dir then
+		return vim.fn.fnamemodify(dir, ":~")
+	else
+		return vim.api.nvim_buf_get_name(0)
+	end
+end
+
 require("oil").setup({
 	columns = { { "icon", add_padding = false } },
 	prompt_save_on_select_new_entry = false,
@@ -22,14 +31,18 @@ require("oil").setup({
 	},
 	constrain_cursor = "editable",
 	watch_for_changes = true,
+	win_options = {
+		winbar = "%!v:lua.get_oil_winbar()",
+	},
 	float = {
 		padding = 8,
-		max_width = 150,
-		max_height = 100,
-		border = "rounded",
+		width = 190,
+		height = 120,
+		border = "single",
 		win_options = {
-			winblend = 0,
+			winblend = 15,
 		},
+		preview_split = "left",
 	},
 })
 -- Open Explorer
