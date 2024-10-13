@@ -46,6 +46,7 @@ require("oil").setup({
 	},
 })
 -- Open Explorer
---
+
 vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open Explorer" })
+vim.keymap.set("n", "<leader>--", require("oil").toggle_float)
 vim.keymap.set("n", "<leader>--", require("oil").toggle_float)

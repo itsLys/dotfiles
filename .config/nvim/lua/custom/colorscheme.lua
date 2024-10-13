@@ -14,10 +14,13 @@ require("rose-pine").setup({
 		WhichKey = { fg = "pine" },
 		String = { fg = "#3e8fb0" },
 		["@keyword.import"] = { fg = "rose" },
+		["@type"] = { fg = "rose" },
+		["@string.escape"] = { fg = "iris" },
 	},
 })
 
 vim.cmd.colorscheme("rose-pine")
+vim.cmd.hi("@type gui=bold")
 vim.cmd.hi("Visual gui=bold")
 vim.cmd.hi("Comment gui=none")
 vim.cmd.hi("NonText guifg=bg")
