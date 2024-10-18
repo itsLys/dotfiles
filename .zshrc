@@ -21,6 +21,12 @@ export ZSHCONF="$HOME/.zshrc"
 export NVCONF="$HOME/.config/nvim"
 export TMUXCONF="$HOME/.config/tmux"
 alias vim="nvim"
+alias vi="nvim"
+alias v="nvim"
+alias nv="nvim"
+alias t="tmux"
+
+
 
 # Created by `pipx` on 2024-09-17 15:16:39
 export PATH="$PATH:/home/lys/.local/bin"
