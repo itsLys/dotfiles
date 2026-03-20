@@ -1,0 +1,113 @@
+# Mod key: Super (Windows key). Use Mod1 for Alt.
+set $mod Mod4
+
+# Font
+font pango:JetBrains Mono 10
+
+# Terminal
+set $term alacritty
+
+# Launcher
+set $menu dmenu_run -fn "JetBrains Mono-10" -nb "#1a1a2e" -nf "#cdd6f4" -sb "#89b4fa" -sf "#1a1a2e"
+
+# --- Keybindings ---
+bindsym $mod+Return exec $term
+bindsym $mod+d exec $menu
+bindsym $mod+Shift+q kill
+bindsym $mod+Shift+r restart
+bindsym $mod+Shift+e exec i3-nagbar -t warning -m 'Exit i3?' -B 'Yes' 'i3-msg exit'
+
+# Focus (vim keys)
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+
+# Move windows
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
+
+# Split
+bindsym $mod+b split h
+bindsym $mod+v split v
+
+# Layouts
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+
+# Fullscreen
+bindsym $mod+f fullscreen toggle
+
+# Floating
+bindsym $mod+Shift+space floating toggle
+bindsym $mod+space focus mode_toggle
+
+# Workspaces
+set $ws1 "1" 
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+
+bindsym $mod+1 workspace $ws1
+bindsym $mod+2 workspace $ws2
+bindsym $mod+3 workspace $ws3
+bindsym $mod+4 workspace $ws4
+bindsym $mod+5 workspace $ws5
+
+bindsym $mod+Shift+1 move container to workspace $ws1
+bindsym $mod+Shift+2 move container to workspace $ws2
+bindsym $mod+Shift+3 move container to workspace $ws3
+bindsym $mod+Shift+4 move container to workspace $ws4
+bindsym $mod+Shift+5 move container to workspace $ws5
+
+# Resize mode
+mode "resize" {
+  bindsym h resize shrink width 10 px or 10 ppt
+  bindsym l resize grow width 10 px or 10 ppt
+  bindsym k resize shrink height 10 px or 10 ppt
+  bindsym j resize grow height 10 px or 10 ppt
+  bindsym Escape mode "default"
+  bindsym Return mode "default"
+}
+bindsym $mod+r mode "resize"
+
+# Lock
+bindsym $mod+shift+x exec i3lock -c 000000
+
+# Screenshot
+bindsym Print exec scrot ~/Pictures/screenshot-%Y%m%d-%H%M%S.png
+
+# --- Autostart ---
+exec --no-startup-id picom -b
+exec --no-startup-id dunst
+exec --no-startup-id feh --bg-scale ~/.config/i3/wallpaper.jpg
+
+# --- Bar ---
+bar {
+  status_command i3status
+  position top
+  colors {
+    background #1a1a2e
+    statusline #cdd6f4
+    separator  #45475a
+    focused_workspace  #89b4fa #89b4fa #1a1a2e
+    active_workspace   #313244 #313244 #cdd6f4
+    inactive_workspace #1a1a2e #1a1a2e #585b70
+    urgent_workspace   #f38ba8 #f38ba8 #1a1a2e
+  }
+}
+
+# --- Gaps (i3-gaps, skip if using plain i3) ---
+# gaps inner 8
+# gaps outer 4
+
+# --- Colors (Catppuccin Mocha) ---
+# class                 border  backgr  text    indicator child_border
+client.focused          #89b4fa #89b4fa #1a1a2e #f5c2e7   #89b4fa
+client.focused_inactive #313244 #313244 #cdd6f4 #45475a   #313244
+client.unfocused        #1a1a2e #1a1a2e #585b70 #1a1a2e   #1a1a2e
+client.urgent           #f38ba8 #f38ba8 #1a1a2e #f38ba8   #f38ba8
