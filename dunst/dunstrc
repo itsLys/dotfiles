@@ -1,11 +1,31 @@
 [global]
   font = JetBrains Mono 10
-  geometry = "300x5-10+30"
-  transparency = 10
-  padding = 8
-  horizontal_padding = 8
+  geometry = "320x5-12+40"
+  transparency = 5
+  padding = 10
+  horizontal_padding = 10
+  frame_width = 2
   frame_color = "#89b4fa"
   separator_color = "#45475a"
+  sort = yes
+  idle_threshold = 120
+  markup = full
+  format = "<b>%s</b>\n%b"
+  alignment = left
+  show_age_threshold = 60
+  timeout = 5
+
+[urgency_low]
   background = "#1a1a2e"
   foreground = "#cdd6f4"
   timeout = 4
+
+[urgency_normal]
+  background = "#1a1a2e"
+  foreground = "#cdd6f4"
+  timeout = 5
+
+[urgency_critical]
+  background = "#f38ba8"
+  foreground = "#1a1a2e"
+  timeout = 0
