@@ -30,3 +30,9 @@ alias t='tmux'
 alias gs='git status'
 alias gc='git commit'
 alias gp='git push'
+
+# Set your projects root — change this to your actual path
+export PROJECT_ROOT="$HOME/github"
+
+# Bind Ctrl+f to the project switcher
+bindkey -s '^f' 'tmux-fzf-cd.sh\n'
