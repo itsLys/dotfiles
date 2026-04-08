@@ -23,6 +23,9 @@ source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # --- Prompt (minimal, no powerline) ---
 PROMPT='%F{cyan}%~%f %# '
 
+autoload -Uz compinit
+compinit
+
 # --- Aliases ---
 alias ll='ls -lah'
 alias nv='nvim'

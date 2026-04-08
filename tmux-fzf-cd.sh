@@ -4,7 +4,7 @@
 ROOT="${PROJECT_ROOT:-$(pwd)}"
 
 # Pick a directory
-selected=$(find "$ROOT" -mindepth 1 -maxdepth 4 -type d \
+selected=$(find "$ROOT" -mindepth 1 -maxdepth 1 -type d \
   ! -path '*/\.*' \
   ! -path '*/node_modules/*' \
   ! -path '*/__pycache__/*' \

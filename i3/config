@@ -8,7 +8,7 @@ focus_follows_mouse no
 default_border pixel 1
 
 # Terminal
-set $term kitty
+set $term rofi-sensible-terminal
 
 # Launcher
 set $menu dmenu_run -fn "JetBrains Mono-10" -nb "#1a1a2e" -nf "#cdd6f4" -sb "#89b4fa" -sf "#1a1a2e"
